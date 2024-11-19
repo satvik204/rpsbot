@@ -1,0 +1,117 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.Rock {
+    color: transparent;
+    background: url(./assets/rock.svg);
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    background-size: 200px;
+}
+
+
+.Paper {
+    color: transparent;
+    background: url(./assets/paper.svg);
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    background-size: 200px;
+}
+
+.Scissor {
+    color: transparent;
+    background: url(./assets/scissor.svg);
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    background-size: 200px;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+.image{
+display: flex;
+justify-content: center;
+}
+
+body{
+    overflow: hidden;
+}
+
+@media screen and (max-width:800px){
+    body{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    #initial{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title{
+        font-size: 0.8rem;
+    }
+
+    img{
+        height: 50px;
+   
+    }
+}
+@media screen and (max-width:440px){
+body{
+    width: 80vh;
+}
+}
+
+
+.selection{
+    display: flex;
+    width: 100vw;
+    padding: 40px;
+    margin-left: 40px;
+}
+
+.line{
+    height: auto;
+    background: grey;
+    width: 2px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#score{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+     width: 90vw;
+     display: flex;
+     flex-direction: column;
+     margin-left: 80px;
+     font-size: 30px;
+}
+
+.text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#refresh{
+    background: rgb(124, 124, 236);
+    width: 70px;
+    height: 7vh;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: .7rem;
+}

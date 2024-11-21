@@ -7,7 +7,10 @@ let timer = 0;
 const p1text  = document.getElementById("p1score");
 const p2text  = document.getElementById("p2score");
 const tim  = document.querySelector(".time");
-
+if(pscore == null){
+    localStorage.setItem("p1score",0)
+    localStorage.setItem("p2score",0)
+}
 //setting text as localStorage
 p1text.innerText = localStorage.getItem("p1score");
 p2text.innerText = localStorage.getItem("p2score");
@@ -108,4 +111,12 @@ function newGame() {
             location.reload();
           }
     },1000)
+}
+
+
+//reset game
+function restart() {
+    localStorage.setItem("p1score",0)
+    localStorage.setItem("p2score",0)
+    location.reload();   
 }
